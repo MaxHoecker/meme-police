@@ -1,0 +1,29 @@
+{
+  "name": "meme-police",
+  "version": "1.0.0",
+  "description": "only memes in general",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxHoecker/meme-police.git"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "author": "Max Hoecker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxHoecker/meme-police/issues"
+  },
+  "homepage": "https://github.com/MaxHoecker/meme-police#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "jimp": "^0.16.1",
+    "meme-creator": "^1.0.6"
+  }
+}
