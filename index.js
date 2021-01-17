@@ -23,23 +23,23 @@ bot.on('message', msg => {
         if(msg.content.length > 70){
             options = {
                 imageURL: pfpUrl, // URL to image
-                topText: 'Ur message is ', // top text of meme
-                bottomText: 'too damn long', // bottom text of meme
+                topText: 'Ur message is too long', // top text of meme
+                bottomText: 'bottom text', // bottom text of meme
                 directory: './images/', // where to save memes
                 fileName: 'random', // change to 'random' for a random file name
             };
         }
         else {
             let message = msg.content;
-            let halfwayIndex = msg.content.indexOf(' ', Math.floor(msg.content.length / 2));
-
-            let topText = message.substring(0, halfwayIndex);
-            let bottomText = message.substring(halfwayIndex);
+            // let halfwayIndex = msg.content.indexOf(' ', Math.floor(msg.content.length / 2));
+            //
+            // let topText = message.substring(0, halfwayIndex);
+            // let bottomText = message.substring(halfwayIndex);
 
             options = {
                 imageURL: pfpUrl, // URL to image
-                topText: topText, // top text of meme
-                bottomText: bottomText, // bottom text of meme
+                topText: msg.content, // top text of meme
+                bottomText: 'bottom text', // bottom text of meme
                 directory: './images/', // where to save memes
                 fileName: 'random', // change to 'random' for a random file name
             };
